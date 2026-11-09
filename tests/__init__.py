@@ -1,0 +1,4 @@
+"""
+Testes automatizados do sistema.
+"""
+

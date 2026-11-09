@@ -1,0 +1,54 @@
+# ==============================================================================
+# .gitignore — case-dados-automacao-beneficiarios
+# Proteção contra vazamento de dados, caches e ambientes de desenvolvimento
+# ==============================================================================
+
+# Ambientes virtuais
+.venv/
+venv/
+ENV/
+env/
+.env/
+
+# Caches e compilados do Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.pyc
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+# Bancos de dados locais SQLite e backups operacionais (Segurança DevSecOps)
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+data/*.db
+data/*.sqlite*
+data/*backup*
+
+# Segredos e variáveis de ambiente
+.env
+.env.*
+!.env.example
+
+# Arquivos do sistema operacional e IDEs
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Garantir versionamento de arquivos públicos necessários
+!.streamlit/config.toml
